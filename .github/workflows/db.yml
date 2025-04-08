@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Echo from DB
         run: |
-          echo "DB says: ${{ inputs.message }}"
+          echo "DB says: ${{ inputs.message }} from progmatic"
