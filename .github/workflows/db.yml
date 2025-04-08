@@ -1,0 +1,16 @@
+name: Bottom Level - DB
+
+on:
+  workflow_call:
+    inputs:
+      message:
+        required: true
+        type: string
+
+jobs:
+  echo-from-db:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo from DB
+        run: |
+          echo "DB says: ${{ inputs.message }}"
